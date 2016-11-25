@@ -1,0 +1,47 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+password                                                                          0x0259       4
+_base_y                                                                           0x025D       4
+_seed                                                                             0x0261       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+inputChar                                                                         R5           1
+price                                                                             R4           1
+enableAdminButton                                                                 R7           1
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+eeprom_write                                                                      0x000E7     13
+eeprom_read                                                                       0x000F4     12
+wait                                                                              0x00100      6
+resetScreen                                                                       0x00106     12
+getKey                                                                            0x00112    105
+waitForConfirm                                                                    0x0017B     18
+showPrice                                                                         0x0018D     33
+pickUpItem                                                                        0x001AE     13
+showMsg                                                                           0x001F5     24
+editItems                                                                         0x0025A     46
+adminPanel                                                                        0x00288     11
+enterAdminPassword                                                                0x00293     70
+on_interrupt                                                                      0x002D9     36
+init                                                                              0x002FD     30
+main                                                                              0x0031B      5
+_lcd_write_nibble_G100                                                            0x00320     20
+_lcd_write_data                                                                   0x00334     12
+lcd_gotoxy                                                                        0x00340     13
+lcd_clear                                                                         0x0034D     12
+lcd_putchar                                                                       0x00359     21
+lcd_puts                                                                          0x0036E     17
+lcd_init                                                                          0x0037F     46
+strcmp                                                                            0x003AD     20
